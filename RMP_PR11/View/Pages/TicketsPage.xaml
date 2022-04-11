@@ -1,0 +1,27 @@
+﻿<Page x:Class="RMP_PR11.View.Pages.TicketsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RMP_PR11.View.Pages"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="TicketsPage" Height="255.08" Width="468.275">
+    <Grid>
+        <ListView x:Name="TicketsLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding TicketID}"/>
+                    <GridViewColumn Header="ClientID" DisplayMemberBinding="{Binding ClientID}"/>
+                    <GridViewColumn Header="PlaneID" DisplayMemberBinding="{Binding PlaneID}"/>
+                    <GridViewColumn Header="ScheduleID" DisplayMemberBinding="{Binding ScheduleID}"/>
+                    <GridViewColumn Header="PlaceOfDeparture" DisplayMemberBinding="{Binding PlaceOfDeparture}"/>
+                    <GridViewColumn Header="PlaceOfArrival" DisplayMemberBinding="{Binding PlaceOfArrival}"/>
+                    <GridViewColumn Header="DepartureDate" DisplayMemberBinding="{Binding DepartureDate}"/>
+                    <GridViewColumn Header="BaggageAvailability" DisplayMemberBinding="{Binding BaggageAvailability}"/>
+                    <GridViewColumn Header="SeatInTheCabin" DisplayMemberBinding="{Binding SeatInTheCabin}"/>
+                    <GridViewColumn Header="TicketPrice" DisplayMemberBinding="{Binding TicketPrice}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

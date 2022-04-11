@@ -1,0 +1,107 @@
+﻿<Window x:Class="RMP_PR11.View.MenuSystem"
+        Name="MenuSystemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RMP_PR11.View"
+        mc:Ignorable="d"
+        Title="MenuSystem" Height="459" Width="700">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="47.34"/>
+            <RowDefinition Height="47.34"/>
+            <RowDefinition Height="47.34"/>
+            <RowDefinition Height="47.34"/>
+            <RowDefinition Height="47.34"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="83.333"/>
+            <ColumnDefinition Width="83.333"/>
+            <ColumnDefinition Width="83.333"/>
+            <ColumnDefinition Width="83.333"/>
+            <ColumnDefinition Width="83.333"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="ExitBtn" 
+                Grid.Row="0"
+                Content="Exjt" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="ExitBtn_Click" 
+                Margin="10,10,48,52"/>
+        <Button x:Name="Shedule"
+                Content="Shedule" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Shedule_Click" 
+                Margin="10,10,48,0" Height="38" Grid.Row="1"/>
+        <Button x:Name="Users"
+                Content="Users" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Users_Click" 
+                Margin="10,47,48,0" Height="35"/>
+        <Frame x:Name="MainFrame" 
+               Grid.ColumnSpan="7"  
+               HorizontalAlignment="Left" 
+               Height="371" 
+               Grid.RowSpan="7" 
+               VerticalAlignment="Top" 
+               Width="587" 
+               BorderBrush="Black" 
+               BorderThickness="1" 
+               Margin="95,47,0,0"/>
+        <Button x:Name="Clients"
+            Content="Clients" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="Clients_Click" 
+            Margin="10,10,48,0" Height="38" Grid.Row="2"/>
+        <Button x:Name="Planes"
+            Content="Planes" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="Planes_Click" 
+            Margin="10,10,48,46" Height="38" Grid.Row="3" Grid.RowSpan="2"/>
+        <Button x:Name="Stuffs"
+            Content="Stuff" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="Stuffs_Click" 
+            Margin="10,10,48,46" Height="38" Grid.Row="4" Grid.RowSpan="2"/>
+        <Button x:Name="Suppliers"
+            Content="Suppliers" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="Suppliers_Click" 
+            Margin="10,9,48,0" Height="38" Grid.Row="5"/>
+        <Button x:Name="TicketInfos"
+            Content="Tickets" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="TicketInfos_Click" 
+            Margin="10,5,48,50" Height="41" Grid.Row="6"/>
+        <Button x:Name="Applications"
+            Content="Applications" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Width="80"
+            Click="Applications_Click" 
+            Margin="10,51,48,7" Height="38" Grid.Row="6"/>
+
+
+    </Grid>
+</Window>

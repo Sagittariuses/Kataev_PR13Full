@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9be7d0f234654021bbf0624f08ba2d60" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.ApplicationForTheConditionOfTheAircraft" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClientType" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Plane" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Posts" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Schedule" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Stuff" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Suppliers" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TicketInfo" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_ApplicationForTheConditionOfTheAircraft_Plane" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ApplicationForTheConditionOfTheAircraft_Stuff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ApplicationForTheConditionOfTheAircraft_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Client_ClientType" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Client_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TicketInfo_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Plane_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TicketInfo_Plane" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Stuff_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TicketInfo_Schedule" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
