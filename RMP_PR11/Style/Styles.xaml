@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="StyleForButton">
+        <Setter Property="Control.Background" Value="#FF1B1B1B"></Setter>
+        <Setter Property="Control.Foreground" Value="#FFDA6A6A"></Setter>
+        <Setter Property="Control.FontStyle" Value="Italic"></Setter>
+        <Setter Property="Control.BorderBrush" Value="#FFDA6A6A"></Setter>
+    </Style>
+    
+    <Style x:Key="StyleForListView" >
+        <Setter Property="Control.Foreground" Value="#FFDA6A6A"/>
+        <Setter Property="Control.Background" Value="#FF1B1B1B"/>
+    </Style>
+    <Style x:Key="StyleForListViewItem" TargetType="ListViewItem" BasedOn="{StaticResource StyleForListView}">
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{x:Null}"></Setter>
+                <Setter Property="BorderBrush" Value="{x:Null}"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="StyleForGrid">
+        <Setter Property="Control.Background" Value="#FF1B1B1B"></Setter>
+    </Style>
+
+</ResourceDictionary>

@@ -6,8 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RMP_PR11.View"
         mc:Ignorable="d"
-        Title="MenuSystem" Height="459" Width="700">
-    <Grid Background="AliceBlue">
+        Title="MenuSystem" Height="459" Width="700" >
+    <Grid Style="{StaticResource StyleForGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="47.34"/>
@@ -34,73 +34,88 @@
                 VerticalAlignment="Center" 
                 Width="80"
                 Click="ExitBtn_Click" 
-                Margin="10,10,48,52"/>
+                Margin="10,10,48,52"
+                Style="{StaticResource StyleForButton}"/>
         <Button x:Name="Shedule"
                 Content="Shedule" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center" 
                 Width="80"
                 Click="Shedule_Click" 
-                Margin="10,10,48,0" Height="38" Grid.Row="1"/>
+                Margin="10,10,48,0" Height="38" Grid.Row="1"                
+                Style="{StaticResource StyleForButton}"/>
+
         <Button x:Name="Users"
                 Content="Users" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center" 
                 Width="80"
                 Click="Users_Click" 
-                Margin="10,47,48,0" Height="35"/>
+                Margin="10,47,48,0" Height="35"
+                Style="{StaticResource StyleForButton}"/>
+
         <Frame x:Name="MainFrame" 
                Grid.ColumnSpan="7"  
                HorizontalAlignment="Left" 
-               Height="371" 
+               Height="370" 
                Grid.RowSpan="7" 
                VerticalAlignment="Top" 
                Width="587" 
                BorderBrush="Black" 
                BorderThickness="1" 
-               Margin="95,47,0,0"/>
+               Margin="95,54,0,0"/>
         <Button x:Name="Clients"
-            Content="Clients" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="Clients_Click" 
-            Margin="10,10,48,0" Height="38" Grid.Row="2"/>
+                Content="Clients" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Clients_Click" 
+                Margin="10,10,48,0" Height="38" Grid.Row="2"
+                Style="{StaticResource StyleForButton}"/>
+
         <Button x:Name="Planes"
-            Content="Planes" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="Planes_Click" 
-            Margin="10,10,48,46" Height="38" Grid.Row="3" Grid.RowSpan="2"/>
+                Content="Planes" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Planes_Click" 
+                Margin="10,10,48,46" Height="38" Grid.Row="3" Grid.RowSpan="2"
+                Style="{StaticResource StyleForButton}"/>
+
         <Button x:Name="Stuffs"
-            Content="Stuff" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="Stuffs_Click" 
-            Margin="10,10,48,46" Height="38" Grid.Row="4" Grid.RowSpan="2"/>
+                Content="Stuff" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Stuffs_Click" 
+                Margin="10,10,48,46" Height="38" Grid.Row="4" Grid.RowSpan="2"
+                Style="{StaticResource StyleForButton}"/>
+
         <Button x:Name="Suppliers"
-            Content="Suppliers" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="Suppliers_Click" 
-            Margin="10,9,48,0" Height="38" Grid.Row="5"/>
+                Content="Suppliers" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Suppliers_Click" 
+                Margin="10,9,48,0" Height="38" Grid.Row="5"
+                Style="{StaticResource StyleForButton}"/>
         <Button x:Name="TicketInfos"
-            Content="Tickets" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="TicketInfos_Click" 
-            Margin="10,5,48,50" Height="41" Grid.Row="6"/>
+                Content="Tickets" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="TicketInfos_Click" 
+                Margin="10,5,48,50" Height="41" Grid.Row="6"                
+                Style="{StaticResource StyleForButton}"/>
+
         <Button x:Name="Applications"
-            Content="Applications" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
-            Width="80"
-            Click="Applications_Click" 
-            Margin="10,51,48,7" Height="38" Grid.Row="6"/>
+                Content="Applications" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="80"
+                Click="Applications_Click" 
+                Margin="10,51,48,7" Height="38" Grid.Row="6"
+                Style="{StaticResource StyleForButton}"/>
 
 
     </Grid>

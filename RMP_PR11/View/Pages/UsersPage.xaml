@@ -8,7 +8,7 @@
       Title="UsersPage" Height="303.08" Width="468.275">
 
     <Grid>
-        <ListView x:Name="UsersLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465">
+        <ListView x:Name="UsersLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding UserID}"/>
@@ -26,6 +26,7 @@
                 VerticalAlignment="Center" 
                 Width="185"
                 Click="AddNewUser_Click" 
-                Margin="0,258,283,25"/>
+                Margin="0,258,283,25"
+                Style="{StaticResource StyleForButton}"/>
     </Grid>
 </Page>

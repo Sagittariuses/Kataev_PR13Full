@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:RMP_PR11"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="c:\users\mobil\desktop\kataev_practice-master\rmp_pr11\style\styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
