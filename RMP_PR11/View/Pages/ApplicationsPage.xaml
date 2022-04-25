@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:RMP_PR11.View.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ApplicationsPage" Height="255.08" Width="468.275">
+      Title="ApplicationsPage" Height="370" Width="587">
     <Grid>
-        <ListView x:Name="ApplLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465">
+        <ListView x:Name="ApplLV" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="587" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ApplicationID}"/>

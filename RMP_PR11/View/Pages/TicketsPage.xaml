@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RMP_PR11.View.Pages"
       mc:Ignorable="d" d:DesignWidth="800"
-      Title="TicketsPage" Height="255.08" Width="468.275">
+      Title="TicketsPage"  Height="370" Width="587">
     <Grid>
-        <ListView x:Name="TicketsLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465">
+        <ListView x:Name="TicketsLV" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="587" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding TicketID}"/>

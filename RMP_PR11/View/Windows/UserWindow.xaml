@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="UserWindow" Height="450" Width="800">
     <Grid>
-        <Grid>
+        <Grid Style="{StaticResource StyleForGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="47.34"/>
@@ -27,19 +27,21 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label  Grid.Column="2" 
-                Grid.ColumnSpan="3"
-                Grid.Row="2" Content="Окно пользователя" 
-                VerticalAlignment="Top" Height="27" Width="184"
-                HorizontalAlignment="Center"/>
+                    Grid.ColumnSpan="3"
+                    Grid.Row="2" Content="Окно пользователя" 
+                    VerticalAlignment="Top" Height="27" Width="184"
+                    HorizontalAlignment="Center"
+                    Foreground="#FFDA6A6A"/>
             <Button x:Name="ExitBtn" 
-                Grid.Row="0" 
-                Content="Exjt" 
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Center" 
-                Width="80"
-                Click="ExitBtn_Click" 
-                Margin="10,10,57,52" 
-                Grid.ColumnSpan="2"/>
+                    Grid.Row="0" 
+                    Content="Exjt" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="80"
+                    Click="ExitBtn_Click" 
+                    Margin="10,10,57,52" 
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource StyleForButton}"/>
           
         </Grid>
     </Grid>

@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:RMP_PR11.View.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-        Title="UsersPage" Height="303.08" Width="468.275">
+        Title="UsersPage"  Height="370" Width="587">
 
     <Grid>
-        <ListView x:Name="ClientsLV" HorizontalAlignment="Left" Height="179" VerticalAlignment="Top" Width="465">
+        <ListView x:Name="ClientsLV" HorizontalAlignment="Left" Height="206" VerticalAlignment="Top" Width="577" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ClientID}"/>
@@ -27,7 +27,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView x:Name="ClientTypesLV" HorizontalAlignment="Left" Height="119" VerticalAlignment="Top" Width="190" Margin="3,184,0,0">
+        <ListView x:Name="ClientTypesLV" HorizontalAlignment="Left" Height="149" VerticalAlignment="Top" Width="190" Margin="0,211,0,0" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ClientTypeID}"/>

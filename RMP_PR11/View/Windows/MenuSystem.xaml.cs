@@ -35,48 +35,62 @@ namespace RMP_PR11.View
         {
             UsersPage usersPage = new UsersPage();
             MainFrame.Navigate(usersPage);
+            TableSelect.Text = "Выбранная таблица: Users";
         }
 
         private void Shedule_Click(object sender, RoutedEventArgs e)
         {
             ShedulesPage shedulePage = new ShedulesPage();
             MainFrame.Navigate(shedulePage);
+            TableSelect.Text = "Выбранная таблица: Schedule";
         }
 
         private void Clients_Click(object sender, RoutedEventArgs e)
         {
             ClientsPage clientsPage = new ClientsPage();
             MainFrame.Navigate(clientsPage);
+            TableSelect.Text = "Выбранная таблица: Clients";
+
         }
 
         private void Planes_Click(object sender, RoutedEventArgs e)
         {
             PlanesPage planes = new PlanesPage();
             MainFrame.Navigate(planes);
+            TableSelect.Text = "Выбранная таблица: Planes";
+
         }
 
         private void Stuffs_Click(object sender, RoutedEventArgs e)
         {
             StuffsPage stuffs = new StuffsPage();
             MainFrame.Navigate(stuffs);
+            TableSelect.Text = "Выбранная таблица: Stuff";
+
         }
 
         private void Suppliers_Click(object sender, RoutedEventArgs e)
         {
             SuppliersPage suppliers = new SuppliersPage();
             MainFrame.Navigate(suppliers);
+            TableSelect.Text = "Выбранная таблица: Suppliers";
+
         }
 
         private void TicketInfos_Click(object sender, RoutedEventArgs e)
         {
             TicketsPage tickets = new TicketsPage();
             MainFrame.Navigate(tickets);
+            TableSelect.Text = "Выбранная таблица: Tickets";
+
         }
 
         private void Applications_Click(object sender, RoutedEventArgs e)
         {
             ApplicationsPage applications = new ApplicationsPage();
             MainFrame.Navigate(applications);
+            TableSelect.Text = "Выбранная таблица: Applications";
+
         }
     }
 }

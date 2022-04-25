@@ -5,10 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RMP_PR11.View.Pages"
       mc:Ignorable="d"
-      Title="UsersPage" Height="303.08" Width="468.275">
+      Title="UsersPage" Height="370" Width="587">
 
     <Grid>
-        <ListView x:Name="UsersLV" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="465" Style="{StaticResource StyleForListView}">
+        <ListView x:Name="UsersLV" HorizontalAlignment="Left" Height="335" VerticalAlignment="Top" Width="587" Style="{StaticResource StyleForListView}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding UserID}"/>
@@ -26,7 +26,7 @@
                 VerticalAlignment="Center" 
                 Width="185"
                 Click="AddNewUser_Click" 
-                Margin="0,258,283,25"
+                Margin="0,340,402,10"
                 Style="{StaticResource StyleForButton}"/>
     </Grid>
 </Page>

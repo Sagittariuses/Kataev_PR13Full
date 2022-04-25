@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RMP_PR11.View"
         mc:Ignorable="d"
+        
         Title="MenuSystem" Height="459" Width="700" >
     <Grid Style="{StaticResource StyleForGrid}">
         <Grid.RowDefinitions>
@@ -61,8 +62,7 @@
                Grid.RowSpan="7" 
                VerticalAlignment="Top" 
                Width="587" 
-               BorderBrush="Black" 
-               BorderThickness="1" 
+               NavigationUIVisibility="Hidden"
                Margin="95,54,0,0"/>
         <Button x:Name="Clients"
                 Content="Clients" 
@@ -117,6 +117,17 @@
                 Margin="10,51,48,7" Height="38" Grid.Row="6"
                 Style="{StaticResource StyleForButton}"/>
 
+        <TextBlock 
+            x:Name="TableSelect"
+            Grid.Column="1" 
+            Grid.ColumnSpan="5" 
+            Text="Выбранная таблица: "
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Center" 
+            FontSize="20" 
+            Height="27" 
+            Width="416"
+            Foreground="#FFDA6A6A" Margin="0,15,0,0"/>
 
     </Grid>
 </Window>
